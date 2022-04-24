@@ -1,0 +1,118 @@
+mcalan23@ubuntu:~/catkin_ws$ cd midterm2_ws
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ 
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ cd ..
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ cd ..
+mcalan23@ubuntu:~/catkin_ws$ cd midterm2_ws
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/midterm2_ws
+Source space: /home/mcalan23/catkin_ws/midterm2_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm2_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm2_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm2_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm2_ws/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm2_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ git clone "https://github.com/online-courses-materials/sms-project4.git"
+Cloning into 'sms-project4'...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 19 (delta 2), reused 14 (delta 0), pack-reused 0
+Unpacking objects: 100% (19/19), 7.50 KiB | 1.87 MiB/s, done.
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ roscore
+... logging to /home/mcalan23/.ros/log/6831ea2e-c3be-11ec-833a-317cbb9e5081/roslaunch-ubuntu-5374.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:43133/
+ros_comm version 1.15.14
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.14
+
+NODES
+
+RLException: roscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://ubuntu:11311/
+The traceback for the exception was written to the log file
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ roscore
+... logging to /home/mcalan23/.ros/log/105c1232-c3ca-11ec-833a-317cbb9e5081/roslaunch-ubuntu-5394.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:43053/
+ros_comm version 1.15.14
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.14
+
+NODES
+
+auto-starting new master
+process[master]: started with pid [5402]
+ROS_MASTER_URI=http://ubuntu:11311/
+
+setting /run_id to 105c1232-c3ca-11ec-833a-317cbb9e5081
+process[rosout-1]: started with pid [5412]
+started core service [/rosout]
+calan23@ubuntu:~/catkin_ws/midterm2_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/midterm2_ws
+Source space: /home/mcalan23/catkin_ws/midterm2_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm2_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm2_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm2_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm2_ws/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm2_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ source devel/setup.bash
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ source devel/setup.bash
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ sorlaunch midterm2 speed_simulator.launch
+sorlaunch: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ roslaunch midterm2 speed_simulator.launch
+RLException: [speed_simulator.launch] is neither a launch file in package [midterm2] nor is [midterm2] a launch file name
+The traceback for the exception was written to the log file
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ roslaunch project4 speed_simulator.launch
+RLException: [speed_simulator.launch] is neither a launch file in package [project4] nor is [project4] a launch file name
+The traceback for the exception was written to the log file
+mcalan23@ubuntu:~/catkin_ws/midterm2_ws$ cd ..
+mcalan23@ubuntu:~/catkin_ws$ ls
+build  logs         midterm_ws   project2_ws  project5_ws          src
+devel  midterm2_ws  project1_ws  project4_ws  sms-course-projects
+mcalan23@ubuntu:~/catkin_ws$ cd project4_ws
+mcalan23@ubuntu:~/catkin_ws/project4_ws$ roslaunch project4 speed_simulator.launch
+RLException: [speed_simulator.launch] is neither a launch file in package [project4] nor is [project4] a launch file name
+The traceback for the exception was written to the log file
+mcalan23@ubuntu:~/catkin_ws/project4_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/project4_ws
+Source space: /home/mcalan23/catkin_ws/project4_ws/src
+Build space: /home/mcalan23/catkin_ws/project4_ws/build
+Devel space: /home/mcalan23/catkin_ws/project4_ws/devel
+Install space: /home/mcalan23/catkin_ws/project4_ws/install
+####
+#### Running command: "cmake /home/mcalan23/catkin_ws/project4_ws/src -DCATKIN_DEVEL_PREFIX=/home/mcalan23/catkin_ws/project4_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mcalan23/catkin_ws/project4_ws/install -G Unix Makefiles" in "/home/mcalan23/catkin_ws/project4_ws/build"
+####
+CMake Error: The current CMakeCache.txt directory /home/mcalan23/catkin_ws/project4_ws/build/CMakeCache.txt is different than the directory /home/mcalan23/catkin_ws/project4/build where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "/home/mcalan23/catkin_ws/project4_ws/src/CMakeLists.txt" does not match the source "/home/mcalan23/catkin_ws/project4/src/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+Invoking "cmake" failed
+mcalan23@ubuntu:~/catkin_ws/project4_ws$ roslaunch project4 speed_simulator.launch
+
+

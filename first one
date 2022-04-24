@@ -1,0 +1,123 @@
+mcalan23@ubuntu:~$ cd Desktop
+mcalan23@ubuntu:~/Desktop$ cd catkin
+mcalan23@ubuntu:~/Desktop/catkin$ cd ~/catkin_ws/
+mcalan23@ubuntu:~/catkin_ws$ mkdir midterm_ws^C
+mcalan23@ubuntu:~/catkin_ws$ mkdir midterm_ws
+mcalan23@ubuntu:~/catkin_ws$ cd midterm_ws
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mkdir src
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ cd src
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ catkn__create_pkg midterm roscpp
+catkn__create_pkg: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ catkin_create_pkg midterm roscpp
+Created file midterm/package.xml
+Created file midterm/CMakeLists.txt
+Created folder midterm/include/midterm
+Created folder midterm/src
+Successfully created files in /home/mcalan23/catkin_ws/midterm_ws/src/midterm. Please adjust the values in package.xml.
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ mkdir launch
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ cd ..
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/midterm_ws
+Source space: /home/mcalan23/catkin_ws/midterm_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm_ws/install
+Creating symlink "/home/mcalan23/catkin_ws/midterm_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/mcalan23/catkin_ws/midterm_ws/src -DCATKIN_DEVEL_PREFIX=/home/mcalan23/catkin_ws/midterm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mcalan23/catkin_ws/midterm_ws/install -G Unix Makefiles" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/mcalan23/catkin_ws/midterm_ws/devel
+-- Using CMAKE_PREFIX_PATH: /home/mcalan23/catkin_ws/devel;/opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/mcalan23/catkin_ws/midterm_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - midterm
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'midterm'
+-- ==> add_subdirectory(midterm)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mcalan23/catkin_ws/midterm_ws/build
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkin_make -j2 -l2
+Base path: /home/mcalan23/catkin_ws/midterm_ws
+Source space: /home/mcalan23/catkin_ws/midterm_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws$ mkdir midterm_ws
+bash: mcalan23@ubuntu:~/catkin_ws$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws$ cd midterm_ws
+bash: mcalan23@ubuntu:~/catkin_ws$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mkdir src
+bash: mcalan23@ubuntu:~/catkin_ws/midterm_ws$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws/midterm_ws$ cd src
+bash: mcalan23@ubuntu:~/catkin_ws/midterm_ws$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ catkn__create_pkg midterm roscpp
+bash: mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkn__create_pkg: command not found
+catkn__create_pkg:: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ catkin_create_pkg midterm roscpp
+bash: mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$: No such file or directory
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ Created file midterm/package.xml
+Created: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ Created file midterm/CMakeLists.txt
+Created: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ Created folder midterm/include/midterm
+Created: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ Created folder midterm/src
+Created: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ Successfully created files in /home/mcalan23/catkin_ws/midterm_ws/src/midterm. Please adjust the values in package.xml
+Successfully: command not found
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/midterm_ws
+Source space: /home/mcalan23/catkin_ws/midterm_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ 

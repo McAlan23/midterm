@@ -121,3 +121,100 @@ Install space: /home/mcalan23/catkin_ws/midterm_ws/install
 #### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm_ws/build"
 ####
 mcalan23@ubuntu:~/catkin_ws/midterm_ws$ 
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ source devel/setup.bash
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ rossrv list
+diagnostic_msgs/AddDiagnostics
+diagnostic_msgs/SelfTest
+dynamic_reconfigure/Reconfigure
+nav_msgs/GetMap
+nav_msgs/GetPlan
+nav_msgs/LoadMap
+nav_msgs/SetMap
+nodelet/NodeletList
+nodelet/NodeletLoad
+nodelet/NodeletUnload
+roscpp/Empty
+roscpp/GetLoggers
+roscpp/SetLoggerLevel
+sensor_msgs/SetCameraInfo
+std_srvs/Empty
+std_srvs/SetBool
+std_srvs/Trigger
+topic_tools/DemuxAdd
+topic_tools/DemuxDelete
+topic_tools/DemuxList
+topic_tools/DemuxSelect
+topic_tools/MuxAdd
+topic_tools/MuxDelete
+topic_tools/MuxList
+topic_tools/MuxSelect
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
+--2022-04-24 03:56:08--  https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
+Resolving raw.github.com (raw.github.com)... 185.199.109.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to raw.github.com (raw.github.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://raw.githubusercontent.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py [following]
+--2022-04-24 03:56:09--  https://raw.githubusercontent.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.111.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2217 (2.2K) [text/plain]
+Saving to: ‘talker.py’
+
+talker.py           100%[===================>]   2.17K  --.-KB/s    in 0s      
+
+2022-04-24 03:56:09 (26.1 MB/s) - ‘talker.py’ saved [2217/2217]
+
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkin_make
+Base path: /home/mcalan23/catkin_ws/midterm_ws
+Source space: /home/mcalan23/catkin_ws/midterm_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+####
+#### Running command: "make -j2 -l2" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ catkin_make -j4 -l4
+Base path: /home/mcalan23/catkin_ws/midterm_ws
+Source space: /home/mcalan23/catkin_ws/midterm_ws/src
+Build space: /home/mcalan23/catkin_ws/midterm_ws/build
+Devel space: /home/mcalan23/catkin_ws/midterm_ws/devel
+Install space: /home/mcalan23/catkin_ws/midterm_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+####
+#### Running command: "make -j4 -l4" in "/home/mcalan23/catkin_ws/midterm_ws/build"
+####
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ make -j4 -l4
+make: *** No targets specified and no makefile found.  Stop.
+mcalan23@ubuntu:~/catkin_ws/midterm_ws$ cd src
+mcalan23@ubuntu:~/catkin_ws/midterm_ws/src$ roscore
+... logging to /home/mcalan23/.ros/log/6831ea2e-c3be-11ec-833a-317cbb9e5081/roslaunch-ubuntu-5183.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:43599/
+ros_comm version 1.15.14
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: noetic
+ * /rosversion: 1.15.14
+
+NODES
+
+auto-starting new master
+process[master]: started with pid [5191]
+ROS_MASTER_URI=http://ubuntu:11311/
+
+setting /run_id to 6831ea2e-c3be-11ec-833a-317cbb9e5081
+process[rosout-1]: started with pid [5201]
+started core service [/rosout]
